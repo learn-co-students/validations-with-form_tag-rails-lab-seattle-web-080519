@@ -22,6 +22,7 @@ class PostsController < ApplicationController
 
   def edit
     @post = Post.find(params[:id])
+    puts @post.errors.full_messages
   end
 
   def update
